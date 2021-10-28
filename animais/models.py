@@ -6,7 +6,7 @@ class Group(models.Model):
 
 class Animal(models.Model):
     name = models.CharField(max_length=255)
-    age = models.models.FloatField() 
+    age = models.FloatField() 
     weight = models.FloatField()  
     sex = models.CharField(max_length=255)
 
