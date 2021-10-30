@@ -16,3 +16,7 @@ class Group(models.Model):
 class Characteristic(models.Model):
     name = models.CharField(max_length=255)
     animais = models.ManyToManyField(Animal, related_name="characteristics")
+
+
+
+
