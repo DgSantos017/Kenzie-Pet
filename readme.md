@@ -1,14 +1,5 @@
 # KENZIE PET
 
-## SUMARY
-#### 1 - Diagrama ENTIDADE RELACIONAMENTO ........ 12
-#### 2 - Rotas de Animais ........................ 17
-#### 2.1 - POST .................................. 19
-#### 2.1 - GET ................................... 69
-#### 2.1 - GET POR ID ............................ 121
-#### 2.1 - DELETE ................................ 148
-
-
 ## 1 - Diagrama ENTIDADE RELACIONAMENTO
 </br>
 ![diagrama_er](./relacionamentos.png)
