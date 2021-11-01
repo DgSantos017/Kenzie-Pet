@@ -42,7 +42,7 @@ class AnimalView(APIView):
         serializer = AnimalSerializer(animal)
 
         if serializer:
-            return Response(serializer.data)
+            return Response(serializer.data, status=201)
         return Response(serializer.errors)
 
 
@@ -51,14 +51,14 @@ class AnimalView(APIView):
             try:
                 animais = Animal.objects.get(id=animal_id)
                 serializer = AnimalSerializer(animais)
-                return Response(serializer.data)
+                return Response(serializer.data, status=200)
 
             except ObjectDoesNotExist:
                 return Response({'error': 'Animal not found'}, status=404)
 
         animais = Animal.objects.all()
         serializer = AnimalSerializer(animais, many=True)
-        return Response(serializer.data)
+        return Response(serializer.data, status=200)
 
 
 
